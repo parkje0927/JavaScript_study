@@ -38,3 +38,18 @@ class Book {
     }
 }
 ```
+
+4. 자바스크립트 인스턴스
+- Instance : Class 를 new 연산자로 생성한 것
+- 인스턴스마다 프로퍼티 값을 유지
+```javascript
+var Book = function(point) {
+    this.point = point;
+}
+
+Book.prototype.getPoint = function() {
+    return this.point + 100;
+}
+
+var oneInstance = new Book(200); //300
+```
